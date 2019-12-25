@@ -9,12 +9,10 @@ int value;
 DHT dht(DHTPIN, DHTTYPE);
 int fan = 3;
 
-
 int isObstaclePin = 22; // This is our input pin
 int isObstacle = HIGH; // HIGH MEANS NO OBSTACLE
 #include <Servo.h>
 Servo servo1;
-
 
 #include "MFRC522.h"
 #include "SPI.h"
@@ -41,13 +39,11 @@ int isObstacle1 = HIGH; // HIGH MEANS NO OBSTACLE
 #define D7_pin  7
 LiquidCrystal_I2C  lcd(I2C_ADDR, En_pin, Rw_pin, Rs_pin, D4_pin, D5_pin, D6_pin, D7_pin);
 
-
 Servo servo3; // Inisiasi Servo
 int trigPin = 12; // Inisiasi Trig Pin Pada Sensor Ultrasinic
 int echoPin = 13; // Inisiasi Echo Pin Pada Sensor Ultrasinic
 long distance; // Inisiasi Jarak
 long duration; //Inisiasi Durasi
-
 
 Servo servo4; // Inisiasi Servo
 int trigPin1 = A3; // Inisiasi Trig Pin Pada Sensor Ultrasinic
@@ -55,10 +51,8 @@ int echoPin1 = A4; // Inisiasi Echo Pin Pada Sensor Ultrasinic
 long distance1; // Inisiasi Jarak
 long duration1; //Inisiasi Durasi
 
-
 int ledLDR = 8;
 int LDR = A6;
-
 
 void setup() {
   Serial.begin(9600);
